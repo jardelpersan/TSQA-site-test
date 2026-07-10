@@ -544,7 +544,9 @@ footer{
     .Logo img{
         width: 150px;
     }
-
+    .menu ul{
+        margin-top: 24px;
+    }
     .hero-text{
         padding: 0 10px;
     }
