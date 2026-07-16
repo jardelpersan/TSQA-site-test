@@ -157,9 +157,13 @@ header{
 
 .hero{
     min-height: 560px;
-    background:
-        linear-gradient(135deg, rgba(2,64,89,.92), rgba(5,131,242,.85)),
-        radial-gradient(circle at 20% 20%, rgba(4,196,217,.35), transparent 45%);
+    background: url("img/logoarte.png");
+    /*background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+        /*linear-gradient(135deg, rgba(2,64,89,.92), rgba(5,131,242,.85)),
+        radial-gradient(circle at 20% 20%, rgba(4,196,217,.35), transparent 45%);*/
     display: flex;
     justify-content: center;
     align-items: center;
