@@ -660,7 +660,7 @@ footer{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 350px){
 
     .Logo img{
         width: 150px;
