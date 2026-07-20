@@ -51,9 +51,62 @@
         <span class="hero-tag">Pintura eletrostática de alta performance</span>
         <h1>Soluções Inteligentes em Tintas em Pó</h1>
         <p>Qualidade, inovação e tecnologia para sua empresa.</p>
-        <button id="orcamento-btn">Solicitar orçamento</button>
+        <button id="abrirModal">Solicitar orçamento</button>
       </div>
     </section>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" aria-hidden="true">
+      <div class="modal-content">
+        <button type="button" class="fechar" aria-label="Fechar formulário">&times;</button>
+
+        <h2 id="modalTitulo">Solicitar orçamento</h2>
+
+        <form id="formOrcamento" novalidate>
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required />
+          </div>
+
+          <div class="campo">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" autocomplete="organization" />
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" />
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" required />
+          </div>
+
+          <div class="campo">
+            <label for="servico">Serviço</label>
+            <select id="servico" name="servico" required>
+              <option value="" disabled selected>Selecione um serviço</option>
+              <option>Tintas em pó</option>
+              <option>Consultoria</option>
+              <option>Desenvolvimento de Cor</option>
+              <option>Controle de Qualidade</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Descreva sua necessidade"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
+    </div>
 
     <section id="sobre" class="sobre">
       <div class="container sobre-grid">
@@ -262,7 +315,7 @@
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               />
             </svg>
-            <a href="mailto:contato@tsqa.com.br">contato@tsqa.com.br</a>
+            <a href="mailto:contato@tsqa.com.br">comercial@tsqa.com.br</a>
           </p>
 
           <p>
@@ -345,6 +398,7 @@
       <p>© 2026 TSQA Soluções e Tintas em Pó. Todos os direitos reservados.</p>
     </footer>
 
+    
     <script src="js/script.js"></script>
   </body>
 </html>
