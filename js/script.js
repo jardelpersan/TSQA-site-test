@@ -110,3 +110,18 @@ menu.querySelectorAll("a").forEach((link) => {
         menuToggle.setAttribute("aria-expanded", "false");
     });
 });
+
+const elementosReveal = document.querySelectorAll("section");
+
+elementosReveal.forEach((el) => el.classList.add("reveal"));
+
+const revealObserver = new IntersectionObserver((entradas) => {
+    entradas.forEach((entrada) => {
+        if(entrada.isIntersecting){
+            entrada.target.classList.add("visivel");
+            revealObserver.unobserve(entrada.target);
+        }
+    });
+}, { threshold: 0.15 });
+
+elementosReveal.forEach((el) => revealObserver.observe(el));
