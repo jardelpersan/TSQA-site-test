@@ -361,6 +361,8 @@ section h2{
 }
 
 .swatch-color{
+    background-size: cover;
+    background-position: center center;
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: var(--raio);
@@ -412,6 +414,9 @@ section h2{
     border-bottom: 1px solid rgba(255,255,255,.15);
 }
 
+.contato-info p span{
+    flex: 1;
+}
 .contato-info svg{
     width: 22px;
     height: 22px;
@@ -658,6 +663,24 @@ footer{
     section{
         padding: 60px 0;
     }
+    }
+
+@media (max-width: 600px){
+
+    #abrirModal{
+        display: none;
+    }
+
+    .hero{
+        min-height: 380px;
+        background-position: center 30%;
+    }
+
+    .hero-text{
+        background-color: rgba(2, 64, 89, .5);
+        box-shadow: none;
+        padding: 30px 20px;
+    }
 }
 
 @media (max-width: 350px){
@@ -678,11 +701,6 @@ footer{
 
     .hero p{
         font-size: 1rem;
-    }
-
-    #abrirModal{
-        padding: 14px 28px;
-        font-size: .95rem;
     }
 
     .card{
